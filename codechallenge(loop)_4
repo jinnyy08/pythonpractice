@@ -1,0 +1,40 @@
+#Source: Codecademy Course (Learn Python 3) - Python Code Challenges: Loops (Advanced)
+
+#Question 4 - Same Values
+
+#In this challenge, we need to find the indices in two equally sized lists where the numbers match.
+#We will be iterating through both of them at the same time and comparing the values, if the numbers are equal, then we record the index. 
+#These are the steps we need to accomplish this:
+
+
+  #1. Define our function to accept two lists of numbers
+  #2. Create a new list to store our matching indices
+  #3. Loop through each index to the end of either of our lists
+  #4. Within the loop, check if our first list at the current index is equal to the second list at the current index. If so, append the index where they matched
+  #5. Return the maximum number
+
+
+#Coding Question
+
+#Write a function named same_values() that takes two lists of numbers of equal size as parameters.
+#The function should return a list of the INDICES where the values were equal in lst1 and lst2.
+#For example, the following code should return [0, 2, 3]
+
+
+#My work
+
+def same_values(lst1, lst2):
+
+  com_idx = [] #List of INDECES, not the VALUES
+
+  for i in range(len(lst1)): #looping with the INDEX <- 'i' becomes the index - **MUST use range() & len() of the list we use as input
+    if lst1[i] == lst2[i]:
+      com_idx.append(i) #i = the INDEX
+  return com_idx
+
+
+#Important note
+  #To loop with INDEX - follow the format of:
+    #for i in range(len(list))
+    #where i = index, the 'pointer' towards the list
+    #where list, is the list, as input
