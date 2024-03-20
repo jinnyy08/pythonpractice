@@ -1,0 +1,46 @@
+#Source: Codecademy Course (Learn Python 3) - Python Code Challenges: Functions (Advanced)
+
+#Question 1 - First Three Multiples
+
+#My work
+
+def first_three_multiples(num):
+  print(num*1)
+  print(num*2)
+  print(num*3)
+  return num*3
+
+#Question 2 - Tip
+
+def tip(total, percentage):
+  return (total*percentage/100)
+
+#Question 3 - Bond, James Bond
+
+def introduction(first_name, last_name):
+  intro = last_name + ', ' + first_name + ' ' + last_name
+  return intro
+
+#Question 4 - Dog Years
+
+#Comments
+#To concatenate BOTH STRING and NUMBER, must convert number INTO STRING
+  #str( number expression)
+
+#My work
+def dog_years(name, age):
+  return name + ', you are ' + str(age*7) + ' years old in dog years.'
+
+#Question 5 - All Operations
+
+#My work
+def lots_of_math(a,b,c,d):
+  first = a + b
+  sec = c - d
+  third = first * sec
+  fourth = third % a
+
+  print(first)
+  print(sec)
+  print(third)
+  return fourth
