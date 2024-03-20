@@ -1,0 +1,32 @@
+#Source: Codecademy Course (Learn Python 3) - Python Code Challenges: Loops (Advanced)
+
+#Question 3 - Max Num
+
+#Here is a more traditional coding problem for you.
+#This function will be used to find the maximum number in a list of numbers.
+#This can be accomplished using the max() function in python, but as a challenge, we are going to manually implement this function.
+# Here is what we need to do:
+
+  #1. Define the function to accept a list of numbers called nums
+  #2. Set our default maximum value to be the first element in the list
+  #3. Loop through every number in the list of numbers
+  #4. Within the loop, if we find a number greater than our starting maximum, then replace the maximum with what we found.
+  #5. Return the maximum number
+
+
+#Coding Question
+
+#Create a function named max_num() that takes a list of numbers named nums as a parameter.
+#The function should return the largest number in nums
+
+#My work
+
+def max_nums(nums):
+
+  max = nums[0] #let 1st elem be the MAX as the start
+
+  for elem in nums: #loop - for checking ALL elem in the list
+    if elem > max:
+      max = elem #replace the value of maximum if it meets the condition
+  return max
+  
