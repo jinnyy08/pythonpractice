@@ -1,0 +1,40 @@
+#Source: Codecademy Course (Learn Python 3) - Python Code Challenges: Functions
+
+#Question 1 - Tenth Power
+
+#My work
+
+def tenth_power(num):
+  return (num**10)
+
+#Question 2 - Square root
+
+#Note: square root by - (** 0.5)
+
+def square_root(num):
+  return (num ** 0.5)
+
+
+#Question 3 - Win Percentage
+
+def win_percentage(wins, losses):
+  total = wins + losses
+  return (wins / total * 100)
+
+#Question 4 - Average
+#Create a variable 'SUM' and possibly COUNT (if more than 2 numbers)
+
+def average(num1, num2):
+  sum = num1 + num2
+  return sum / 2
+
+#Question 5 - Remainder
+#Function for Remainder - "%"
+def remainder(num1, num2):
+
+  num1 = num1 * 2
+  num2 = num2 / 2
+
+  rem = num1 % num2
+  return rem
+
