@@ -1,0 +1,38 @@
+#Programmers - Coding Test Practice 배열 회전시키기
+
+#Description
+#정수가 담긴 배열 numbers와 문자열 direction가 매개변수로 주어집니다. 
+#배열 numbers의 원소를 direction방향으로 한 칸씩 회전시킨 배열을 return하도록 solution 함수를 완성해주세요.
+
+#제한사항
+#3 ≤ numbers의 길이 ≤ 20
+#direction은 "left" 와 "right" 둘 중 하나입니다.
+
+
+#My solution
+
+def solution(numbers, direction):
+
+    last = numbers[-1]
+    first = numbers[0]
+    
+    if direction == "right":
+        numbers.insert(0, last) #1 APPEND last elem to the FRONT of the list
+        numbers.pop() #2 DELETE the last elem
+        return numbers
+    
+    elif direction == "left":
+        numbers.append(first)
+        numbers.pop(0)
+        return numbers
+
+#To make in concise - another approach
+
+def solution(numbers, direction):
+
+    return [numbers[-1]] + numbers[:-1] if direction == "right" else numbers[1:] + [numbers[0]] #List is EXClusive
+
+##ADDING element to a List:
+#[ number or any string ] + [any list format]
+  #place it FRONT, if to add element at FRONT of the list
+  #place it at BACK, if to add element at the BACK of the list
